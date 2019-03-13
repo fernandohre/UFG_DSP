@@ -22,7 +22,8 @@ Ter java 8 instalado na máquina para executar o programa
 Basta compilar e executar!
 
 
-![patrick](https://user-images.githubusercontent.com/12806350/54320603-4a144c80-45cc-11e9-8345-eec9daf12e83.png)
+![homer](https://user-images.githubusercontent.com/12806350/54320725-cc047580-45cc-11e9-82c2-d2cd2d0a0f3c.png)
+
 
 
 
