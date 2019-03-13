@@ -19,17 +19,14 @@ public class Principal {
         String linha = null;
 
         try {
-            // FileReader reads text files in the default encoding.
             FileReader fileReader = new FileReader(nomeArquivo);
 
-            // Always wrap FileReader in BufferedReader.
             BufferedReader leitorDeBuffer = new BufferedReader(fileReader);
 
             while((linha = leitorDeBuffer.readLine()) != null) {
                 System.out.println(linha);
-            }   
-
-            // Always close files.
+            }
+            
             leitorDeBuffer.close();         
         }
         catch(FileNotFoundException ex) {
