@@ -19,9 +19,9 @@ public class Principal {
         String linha = null;
 
         try {
-            FileReader fileReader = new FileReader(nomeArquivo);
+            FileReader leitorDeArquivo = new FileReader(nomeArquivo);
 
-            BufferedReader leitorDeBuffer = new BufferedReader(fileReader);
+            BufferedReader leitorDeBuffer = new BufferedReader(leitorDeArquivo);
 
             while((linha = leitorDeBuffer.readLine()) != null) {
                 System.out.println(linha);
