@@ -1,5 +1,5 @@
 
-package br.com.fernandohre.dsp2019.aulas0104;
+package br.com.fernandohre.dsp2019.aulas0104.ap;
 
 import java.io.BufferedReader;
 import java.io.File;
