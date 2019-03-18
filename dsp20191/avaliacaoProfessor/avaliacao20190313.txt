@@ -1,1 +1,0 @@
-Corrija o nome do repositório, pois não está no padrão especificado no slide.
