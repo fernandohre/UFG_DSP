@@ -19,35 +19,22 @@ public class ManipulaArquivo {
                                  .getAbsolutePath();
         escrevaArquivo("Disciplina para software persistente", nomeArquivo);
         
-        exibaConteudoArquivo(nomeArquivo);
+        escrevaArquivo("arquivo csv será lido....", nomeArquivo);
+        
+        LeitorDeArquivo
+        .Instancia()
+        .obtenhaUnidadesFederativas(
+                new File("src/main/resources/UF.csv").getAbsolutePath(),
+                ",")
+        .forEach((item) -> {
+            System.out.println("---------------------------");
+            System.out.println("Identificador: " + item.obtenhaIdentificador());
+            System.out.println("Sigla: " + item.obtenhaSigla());
+            System.out.println("Descrição: " + item.obtenhaDescricao());
+            System.out.println("Código Região: " + item.obtenhaCodigoRegiao());
+        });
     }
     
-    private static void exibaConteudoArquivo(String nomeArquivoCaminho) {
-        String linha = null;
-
-        try {
-            FileReader leitorDeArquivo = new FileReader(nomeArquivoCaminho);
-
-            BufferedReader leitorDeBuffer = new BufferedReader(leitorDeArquivo);
-
-            while((linha = leitorDeBuffer.readLine()) != null) {
-                System.out.println(linha);
-            }
-            
-            leitorDeBuffer.close();         
-        }
-        catch(FileNotFoundException ex) {
-            System.out.println(
-                "Não foi possível abrir o arquivo '" + 
-                nomeArquivoCaminho + "'");                
-        }
-        catch(IOException ex) {
-            System.out.println(
-                "Erro na leitura do arquivo '" 
-                + nomeArquivoCaminho + "'");
-        }
-    }
-
     private static void escrevaArquivo(String mensagem, 
                                        String caminhoNomeArquivo) {
         File arquivo = new File(caminhoNomeArquivo);
