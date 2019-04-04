@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.fernandohre.dsp2019.aulas1316.ap;
+package br.com.fernandohre.dsp2019.aulas1316.ap.Modelo;
 
 /**
  *
