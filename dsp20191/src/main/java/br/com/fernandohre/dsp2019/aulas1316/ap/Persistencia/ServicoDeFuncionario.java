@@ -68,9 +68,14 @@ public class ServicoDeFuncionario implements IServico<Funcionario>{
         try {
             ResultSet retorno = mapeador.obtenhaResultset(sql);
             while(retorno.next()) {
-                return new Funcionario(retorno.getLong("ID"),
-                                       retorno.getString("NOME"),
-                                       retorno.getLong("MATRICULA"));
+                Funcionario funcionario = new Funcionario(retorno.getLong("ID"),
+                                                retorno.getString("NOME"),
+                                                retorno.getLong("MATRICULA"));
+                
+                retorno.close();
+                mapeador.fecharConexao();
+                
+                return funcionario;
             }
         } catch (Exception ex) {
             Logger.getLogger(ServicoDeFuncionario.class.getName())

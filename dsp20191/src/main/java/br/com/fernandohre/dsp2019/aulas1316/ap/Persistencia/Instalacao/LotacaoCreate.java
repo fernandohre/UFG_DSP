@@ -24,7 +24,7 @@ public class LotacaoCreate extends PersistenciaJdbc {
                 "CARGO LONG NOT NULL, " +
                 "DEPARTAMENTO LONG NOT NULL, " +
                 "DATAINICIAL LONG NOT NULL, " +
-                "DATA FINAL LONG NOT NULL, " +
+                "DATAFINAL LONG NOT NULL, " +
                 "FOREIGN KEY (CARGO) REFERENCES CARGO(ID), " +
                 "FOREIGN KEY (DEPARTAMENTO) REFERENCES DEPARTAMENTO(ID)" +
                 ")";
