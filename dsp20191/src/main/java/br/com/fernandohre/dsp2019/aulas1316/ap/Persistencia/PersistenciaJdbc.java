@@ -19,4 +19,6 @@ public class PersistenciaJdbc {
         comando = conexao.createStatement();
 
     }
+    
+    public boolean crieTabela() throws Exception { return false;}
 }

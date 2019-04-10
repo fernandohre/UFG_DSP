@@ -5,10 +5,15 @@
  */
 package br.com.fernandohre.dsp2019.aulas1316.ap.Persistencia;
 
+import static javafx.scene.input.KeyCode.T;
+
 /**
  *
  * @author Fernando Callata
+ * @param <T>
  */
-public interface IServico {
-    void insira();
+public interface IServico<T> {
+    void insira(T dado);
+    void atualize(T dado);
+    T obenha(long id);
 }

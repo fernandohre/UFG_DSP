@@ -12,6 +12,7 @@ import br.com.fernandohre.dsp2019.aulas1316.ap.Persistencia.PersistenciaJdbc;
  * @author Fernando Callata
  */
 public class FuncionarioCreate extends PersistenciaJdbc {
+    @Override
     public boolean crieTabela() throws Exception{
 
         preparePersistencia();
