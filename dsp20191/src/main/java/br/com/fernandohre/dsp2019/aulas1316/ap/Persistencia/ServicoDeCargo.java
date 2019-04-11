@@ -13,6 +13,12 @@ import br.com.fernandohre.dsp2019.aulas1316.ap.Modelo.Cargo;
  */
 public class ServicoDeCargo implements IServico<Cargo>{
 
+    private Mapeador mapeador;
+    
+    public ServicoDeCargo() {
+        mapeador = new Mapeador();
+    }
+    
     @Override
     public void insira(Cargo dado) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

@@ -13,6 +13,12 @@ import br.com.fernandohre.dsp2019.aulas1316.ap.Modelo.Lotacao;
  */
 public class ServicoDeLotacao implements IServico<Lotacao>{
 
+    private Mapeador mapeador;
+    
+    public ServicoDeLotacao() {
+        mapeador = new Mapeador();
+    }
+    
     @Override
     public void insira(Lotacao dado) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

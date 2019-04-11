@@ -13,6 +13,12 @@ import br.com.fernandohre.dsp2019.aulas1316.ap.Modelo.Departamento;
  */
 public class ServicoDeDepartamento implements IServico<Departamento> {
 
+    private Mapeador mapeador;
+    
+    public ServicoDeDepartamento() {
+        mapeador = new Mapeador();
+    }
+    
     @Override
     public void insira(Departamento dado) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

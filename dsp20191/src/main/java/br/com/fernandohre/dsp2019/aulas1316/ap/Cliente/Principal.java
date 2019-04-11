@@ -50,6 +50,14 @@ public class Principal {
             int conceitoSelecionado = leitor.nextInt();
             switch(conceitoSelecionado) {
                 case 1:
+                    switch(opcaoOperacao) {
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                    }
                     break;
                 case 2:
                     break;
