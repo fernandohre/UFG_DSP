@@ -39,21 +39,50 @@ public class Principal {
                 System.out.println(e.getMessage());
             }
         });
+        
+        while(true) {
+            menu();
+            
+            int opcaoOperacao = leitor.nextInt();
+            
+            conceitos();
+            
+            int conceitoSelecionado = leitor.nextInt();
+            switch(conceitoSelecionado) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                default:
+                    System.out.println("Nenhum conceito selecionado!");
+                    break;
+            }
+        }
     }
     
     public static void menu() {
+        System.out.println("\n");
         System.out.println(" OPERAÇÕES ");
         System.out.println(" 1 - Cadastrar");
         System.out.println(" 2 - Atualizar");
         System.out.println(" 3 - Consultar");
+        System.out.println("\n");
     }
     
     public static void conceitos() {
+        System.out.println("\n");
         System.out.println("Selecione o conceito : ");
         System.out.println("1 - Funcionario");
         System.out.println("2 - Departamento");
         System.out.println("3 - Cargo");
         System.out.println("4 - Lotacao");
         System.out.println("5 - Voltar Tela de Operações");
+        System.out.println("\n");
     }
 }
